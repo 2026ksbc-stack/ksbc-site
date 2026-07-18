@@ -8,7 +8,9 @@
  */
 
 async function loadJSON(path) {
-  const res = await fetch(path);
+  // 캐시 방지: 매번 최신 JSON을 받아오도록 타임스탬프를 붙이고 no-store를 사용합니다.
+  const bustedPath = path + (path.includes("?") ? "&" : "?") + "t=" + Date.now();
+  const res = await fetch(bustedPath, { cache: "no-store" });
   if (!res.ok) throw new Error("데이터를 불러오지 못했습니다: " + path);
   return res.json();
 }
