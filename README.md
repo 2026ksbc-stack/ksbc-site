@@ -26,7 +26,7 @@ ksbc-website/
 │   ├── posts.json       자유게시판 글 목록
 │   └── archive.json     자료실 파일 목록
 └── files/
-    └── 한국방송비평학회_정관.pdf   정관 원문
+    └── KSBC-articles-of-association-2026.pdf   정관 원문
 ```
 
 "학회소개"는 상단 메뉴에서 마우스를 올리면(또는 모바일에서 탭하면) 5개 하위 메뉴가 펼쳐지는
@@ -41,6 +41,19 @@ ksbc-website/
 - `greeting.html` — 학회장 인사말 (현재 임시 초안)
 - `organization.html` 하단 "현직 임원 명단" 표 — 실제 회장·부회장·이사·감사 성함
 - `location.html` — 실제 주소, 전화번호, 이메일, 지도(iframe)
+
+## 파일명 관련 주의사항 (한글 파일명 다운로드 오류)
+
+정관 PDF 파일명은 원래 한글이었으나(`한국방송비평학회_정관.pdf`), macOS에서 압축을 풀거나
+GitHub에 업로드하는 과정에서 한글 자모가 다른 방식으로 인코딩(NFC/NFD)되면서 실제 파일명과
+사이트의 링크가 서로 달라져 "업로드는 되는데 다운로드는 실패"하는 문제가 흔히 발생합니다.
+이를 방지하기 위해 파일명을 영문(`files/KSBC-articles-of-association-2026.pdf`)으로
+바꿔두었습니다.
+
+앞으로 자료실 등에 새 파일을 추가할 때도 파일명은 한글/공백 없이 영문·숫자·하이픈만
+사용하시는 것을 권장합니다 (예: `2026-notice.pdf`, `journal-guideline.docx`). 화면에 보이는
+제목은 `data/archive.json`의 `title`/`description`에 한글로 자유롭게 쓰면 되고, 실제
+`file` 경로만 영문으로 유지하면 됩니다.
 
 ## GitHub Pages에 올리는 방법
 
