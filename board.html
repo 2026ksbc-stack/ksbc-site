@@ -35,19 +35,49 @@
   <section class="section">
     <div class="container">
       <div class="note-box">
-        본 게시판은 정적 페이지로 운영되어 관리자가 글을 대신 등록합니다. 게시를 원하시는 글은
-        학회 이메일로 보내주세요. 회원이 직접 글을 작성할 수 있는 댓글 방식(Giscus 등) 연동은
-        준비 중입니다.
+        학회 안내 글은 사무국이 등록하며, 회원 여러분은 아래 댓글창(Giscus)에 GitHub 계정으로
+        로그인하여 자유롭게 글을 남기실 수 있습니다.
       </div>
+      <h2>학회 안내</h2>
       <ul class="item-list" id="board-list">
         <li class="empty-state">불러오는 중...</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <h2>회원 게시판 (Giscus)</h2>
+      <p style="color:var(--text-light);font-size:0.9rem;margin-top:-8px;">
+        GitHub 계정으로 로그인 후 댓글을 남기면 자유게시판 글로 등록됩니다.
+      </p>
 
       <!--
-        회원이 직접 댓글을 남길 수 있게 하려면 Giscus(GitHub Discussions 기반, 무료)를
-        연동할 수 있습니다. https://giscus.app 에서 저장소를 연결해 스크립트를 발급받은 뒤
-        아래에 <script> 태그를 추가하면 됩니다.
+        ▼▼▼ Giscus 설정 방법 ▼▼▼
+        1. 저장소가 Public이어야 하고, Settings → General → Features에서 Discussions를 켭니다.
+        2. https://github.com/apps/giscus 에서 giscus 앱을 이 저장소에 설치합니다.
+        3. https://giscus.app 접속 → Repository에 "계정명/저장소명" 입력 →
+           Page-Discussions Mapping은 "pathname" 추천 → Discussion Category는
+           "Announcements"(추천) 또는 새로 만든 카테고리 선택.
+        4. 화면 하단에 나오는 <script> 태그를 그대로 복사해서 아래
+           <script ...></script> 블록을 통째로 교체하세요 (data-repo, data-repo-id,
+           data-category, data-category-id 값이 실제 값으로 채워져 있어야 합니다).
       -->
+ <script src="https://giscus.app/client.js"
+        data-repo="2026ksbc-stack/ksbc-site"
+        data-repo-id="R_kgDOTcQD9g"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOTcQD9s4DBcYB"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ko"
+        crossorigin="anonymous"
+        async>
+</script>
     </div>
   </section>
 </main>
