@@ -289,6 +289,49 @@ main { min-height: 60vh; }
   background: #fff;
 }
 .detail-box h3 { margin-top: 0; }
+
+/* 학회장 인사말 사진 레이아웃 */
+.greeting-layout {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.greeting-photo {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  background: var(--bg-soft);
+}
+.greeting-photo.img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px dashed var(--border);
+  color: var(--text-light);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.greeting-text {
+  flex: 1;
+  min-width: 260px;
+}
+@media (max-width: 640px) {
+  .greeting-photo {
+    width: 140px;
+    height: 170px;
+    margin: 0 auto;
+  }
+  .greeting-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+}
 .detail-meta { color: var(--text-light); font-size: 0.85rem; margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
 .detail-body { white-space: pre-wrap; }
 .back-link { display: inline-block; margin-top: 20px; }
