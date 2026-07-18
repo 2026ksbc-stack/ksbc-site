@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자유게시판 | 사단법인 한국방송비평학회</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-kr">사단법인 한국방송비평학회</span>
+      <span class="brand-en">Korean Society for Broadcasting Criticism (KSBC)</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">홈</a>
+      <a href="about.html">학회소개</a>
+      <a href="notices.html">공지사항</a>
+      <a href="research.html">연구활동</a>
+      <a href="journal.html">학술지</a>
+      <a href="board.html" class="active">자유게시판</a>
+      <a href="archive.html">자료실</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <h1>자유게시판</h1>
+  <p>회원 여러분의 자유로운 의견을 나누는 공간입니다</p>
+</div>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="note-box">
+        본 게시판은 정적 페이지로 운영되어 관리자가 글을 대신 등록합니다. 게시를 원하시는 글은
+        학회 이메일로 보내주세요. 회원이 직접 글을 작성할 수 있는 댓글 방식(Giscus 등) 연동은
+        준비 중입니다.
+      </div>
+      <ul class="item-list" id="board-list">
+        <li class="empty-state">불러오는 중...</li>
+      </ul>
+
+      <!--
+        회원이 직접 댓글을 남길 수 있게 하려면 Giscus(GitHub Discussions 기반, 무료)를
+        연동할 수 있습니다. https://giscus.app 에서 저장소를 연결해 스크립트를 발급받은 뒤
+        아래에 <script> 태그를 추가하면 됩니다.
+      -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <span id="year"></span> 사단법인 한국방송비평학회 (Korean Society for Broadcasting Criticism). All rights reserved.</div>
+    <div><a href="archive.html">정관 및 자료 보기</a></div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  loadJSON("data/posts.json")
+    .then((items) => renderAccordionList(document.getElementById("board-list"), items))
+    .catch((err) => {
+      document.getElementById("board-list").innerHTML = '<li class="empty-state">게시글을 불러오지 못했습니다.</li>';
+      console.error(err);
+    });
+</script>
+
+</body>
+</html>

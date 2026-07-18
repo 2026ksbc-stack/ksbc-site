@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공지사항 | 사단법인 한국방송비평학회</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-kr">사단법인 한국방송비평학회</span>
+      <span class="brand-en">Korean Society for Broadcasting Criticism (KSBC)</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">홈</a>
+      <a href="about.html">학회소개</a>
+      <a href="notices.html" class="active">공지사항</a>
+      <a href="research.html">연구활동</a>
+      <a href="journal.html">학술지</a>
+      <a href="board.html">자유게시판</a>
+      <a href="archive.html">자료실</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <h1>공지사항</h1>
+  <p>학회의 공식 소식과 안내사항을 전해드립니다</p>
+</div>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <ul class="item-list" id="notice-list">
+        <li class="empty-state">불러오는 중...</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <span id="year"></span> 사단법인 한국방송비평학회 (Korean Society for Broadcasting Criticism). All rights reserved.</div>
+    <div><a href="archive.html">정관 및 자료 보기</a></div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  loadJSON("data/notices.json")
+    .then((items) => renderAccordionList(document.getElementById("notice-list"), items))
+    .catch((err) => {
+      document.getElementById("notice-list").innerHTML = '<li class="empty-state">공지사항을 불러오지 못했습니다.</li>';
+      console.error(err);
+    });
+</script>
+
+</body>
+</html>

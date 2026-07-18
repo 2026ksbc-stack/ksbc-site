@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사단법인 한국방송비평학회 (KSBC)</title>
+<meta name="description" content="사단법인 한국방송비평학회 공식 홈페이지 - 학회소개, 공지사항, 연구활동, 학술지, 자유게시판, 자료실">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-kr">사단법인 한국방송비평학회</span>
+      <span class="brand-en">Korean Society for Broadcasting Criticism (KSBC)</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="active">홈</a>
+      <a href="about.html">학회소개</a>
+      <a href="notices.html">공지사항</a>
+      <a href="research.html">연구활동</a>
+      <a href="journal.html">학술지</a>
+      <a href="board.html">자유게시판</a>
+      <a href="archive.html">자료실</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>방송을 비평하고, 미디어의 미래를 연구합니다</h1>
+    <p>한국방송비평학회는 방송학자, 현업 방송인, 방송평론가, 언론인, 시청자, 미디어정책 관계자들이 함께하는
+    학술 공동체입니다. 방송 분야의 학술적 연구와 비평 활동을 통해 방송학계와 사회 발전에 기여합니다.</p>
+    <p class="hero-en">Korean Society for Broadcasting Criticism</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>학회 소개</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>학회 목적</h3>
+          <p>방송 분야의 학술적 연구 및 비평 활동을 통해 방송학계와 사회 발전에 기여하고, 미디어 교육에 관한
+          연구 및 보급을 지원합니다.</p>
+        </div>
+        <div class="card">
+          <h3>학술지 발간</h3>
+          <p>학회지 「방송비평학보(Korean Journal of Broadcasting Criticism)」를 연 2회 이상
+          발간합니다.</p>
+        </div>
+        <div class="card">
+          <h3>방송비평상</h3>
+          <p>매년 2월 방송비평상 시상식을 개최하여 학회의 목적에 부합하는 우수한 비평 활동을 포상합니다.</p>
+        </div>
+      </div>
+      <p style="margin-top:20px;"><a class="btn" href="about.html">학회소개 자세히 보기</a></p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <h2>공지사항</h2>
+      <ul class="item-list" id="notice-preview"></ul>
+      <p style="margin-top:16px;"><a class="btn outline" href="notices.html">공지사항 전체 보기</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>주요 사업</h2>
+      <div class="card-grid">
+        <div class="card"><h3>학술연구·조사</h3><p>방송 및 미디어 관련 학술연구와 조사를 수행합니다.</p></div>
+        <div class="card"><h3>학술대회·세미나</h3><p>연 1회 이상 학술대회 및 세미나·강연회를 개최합니다.</p></div>
+        <div class="card"><h3>학술지·도서 발간</h3><p>방송비평학보를 비롯한 학술 간행물을 발간합니다.</p></div>
+        <div class="card"><h3>국내외 교류·협력</h3><p>국내외 관련 기관과 교류하고 협력합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <span id="year"></span> 사단법인 한국방송비평학회 (Korean Society for Broadcasting Criticism). All rights reserved.</div>
+    <div><a href="archive.html">정관 및 자료 보기</a></div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  loadJSON("data/notices.json")
+    .then((items) => renderPreviewList(document.getElementById("notice-preview"), items, 4))
+    .catch((err) => {
+      document.getElementById("notice-preview").innerHTML = '<li class="empty-state">공지사항을 불러오지 못했습니다.</li>';
+      console.error(err);
+    });
+</script>
+
+</body>
+</html>

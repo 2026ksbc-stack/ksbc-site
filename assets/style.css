@@ -1,0 +1,316 @@
+/* 사단법인 한국방송비평학회 (KSBC) 홈페이지 공통 스타일 */
+
+:root {
+  --navy: #0f2a4a;
+  --navy-dark: #0a1d33;
+  --blue: #1e4d8c;
+  --blue-light: #eaf1fb;
+  --gold: #c9a34e;
+  --text: #222831;
+  --text-light: #5b6472;
+  --border: #e2e6ec;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fb;
+  --max-width: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.site-header {
+  background: var(--navy);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid var(--gold);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.brand:hover { text-decoration: none; }
+.brand-kr {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.brand-en {
+  font-size: 0.72rem;
+  color: #c9d4e3;
+  letter-spacing: 0.03em;
+}
+
+.main-nav {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: #e8edf5;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+.main-nav a:hover { background: rgba(255,255,255,0.12); text-decoration: none; }
+.main-nav a.active { background: var(--gold); color: var(--navy-dark); font-weight: 700; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+  color: #fff;
+  padding: 64px 24px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.1rem;
+  margin: 0 0 12px;
+  font-weight: 800;
+}
+.hero p {
+  color: #dbe5f3;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+}
+.hero .hero-en {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #b9c9e0;
+  letter-spacing: 0.04em;
+}
+
+/* Page header (non-home pages) */
+.page-header {
+  background: var(--navy);
+  color: #fff;
+  padding: 40px 24px;
+  text-align: center;
+}
+.page-header h1 { margin: 0 0 6px; font-size: 1.7rem; }
+.page-header p { margin: 0; color: #c9d4e3; font-size: 0.92rem; }
+
+/* Sections */
+main { min-height: 60vh; }
+
+.section {
+  padding: 48px 0;
+}
+.section.alt { background: var(--bg-soft); }
+
+.section h2 {
+  font-size: 1.4rem;
+  margin: 0 0 20px;
+  padding-left: 12px;
+  border-left: 4px solid var(--gold);
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  margin: 24px 0 10px;
+  color: var(--navy);
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px;
+}
+.card h3 { margin-top: 0; color: var(--navy); }
+.card p { margin: 0; color: var(--text-light); font-size: 0.94rem; }
+
+/* Lists (notices, board, archive) */
+.item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid var(--navy);
+}
+.item-list li {
+  border-bottom: 1px solid var(--border);
+}
+.item-list a.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 8px;
+  color: var(--text);
+}
+.item-list a.item-row:hover { background: var(--blue-light); text-decoration: none; }
+.item-title { font-weight: 500; flex: 1; }
+.item-title .badge {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.item-meta { color: var(--text-light); font-size: 0.85rem; white-space: nowrap; }
+.empty-state {
+  padding: 40px 8px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+/* Detail view */
+.detail-box {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px;
+  margin-top: 20px;
+  background: #fff;
+}
+.detail-box h3 { margin-top: 0; }
+.detail-meta { color: var(--text-light); font-size: 0.85rem; margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.detail-body { white-space: pre-wrap; }
+.back-link { display: inline-block; margin-top: 20px; }
+
+/* Table */
+table.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+table.info-table th, table.info-table td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 0.94rem;
+}
+table.info-table th {
+  background: var(--bg-soft);
+  width: 160px;
+  color: var(--navy);
+}
+
+/* Org chart list */
+.org-list { list-style: none; padding: 0; margin: 16px 0; }
+.org-list li {
+  padding: 10px 14px;
+  border-bottom: 1px dashed var(--border);
+  display: flex;
+  gap: 12px;
+}
+.org-list li strong { min-width: 90px; color: var(--navy); }
+
+/* Timeline */
+.timeline { list-style: none; padding: 0; margin: 16px 0; }
+.timeline li {
+  padding: 10px 0 10px 20px;
+  border-left: 2px solid var(--border);
+  position: relative;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.timeline .t-date { font-weight: 700; color: var(--navy); margin-right: 10px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.btn:hover { background: var(--blue); text-decoration: none; }
+.btn.outline {
+  background: transparent;
+  color: var(--navy);
+  border: 1px solid var(--navy);
+}
+.btn.outline:hover { background: var(--blue-light); }
+
+.note-box {
+  background: var(--blue-light);
+  border-left: 4px solid var(--blue);
+  padding: 14px 18px;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  color: var(--text);
+  margin: 16px 0;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--navy-dark);
+  color: #b9c4d4;
+  padding: 32px 24px;
+  font-size: 0.85rem;
+  margin-top: 40px;
+}
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.site-footer a { color: #d7deea; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .main-nav { width: 100%; justify-content: flex-start; }
+  .hero { padding: 44px 20px; }
+  .hero h1 { font-size: 1.5rem; }
+  .item-list a.item-row { flex-direction: column; gap: 4px; }
+}
