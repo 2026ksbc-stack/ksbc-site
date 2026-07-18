@@ -92,6 +92,82 @@ img { max-width: 100%; }
 .main-nav a:hover { background: rgba(255,255,255,0.12); text-decoration: none; }
 .main-nav a.active { background: var(--gold); color: var(--navy-dark); font-weight: 700; }
 
+/* Dropdown submenu (학회소개) */
+.main-nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.main-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+  min-width: 170px;
+  padding: 6px;
+  z-index: 200;
+}
+.main-nav .dropdown:hover .dropdown-menu,
+.main-nav .dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+.main-nav .dropdown-menu a {
+  display: block;
+  color: var(--text);
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.main-nav .dropdown-menu a:hover {
+  background: var(--blue-light);
+  text-decoration: none;
+  color: var(--navy);
+}
+.main-nav .dropdown-menu a.active {
+  background: var(--blue-light);
+  color: var(--navy);
+  font-weight: 700;
+}
+
+/* Sub-tabs bar (학회소개 하위 페이지 상단) */
+.subtabs {
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+}
+.subtabs .container {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 10px 24px;
+}
+.subtabs a {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+.subtabs a:hover { background: var(--blue-light); text-decoration: none; color: var(--navy); }
+.subtabs a.active { background: var(--navy); color: #fff; }
+
+@media (max-width: 640px) {
+  .main-nav .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding-left: 12px;
+    display: none;
+  }
+  .main-nav .dropdown:hover .dropdown-menu,
+  .main-nav .dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+}
+
 /* Hero */
 .hero {
   background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);

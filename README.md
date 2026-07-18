@@ -7,12 +7,16 @@
 
 ```
 ksbc-website/
-├── index.html       홈
-├── about.html        학회소개
-├── notices.html       공지사항
-├── research.html      연구활동
-├── journal.html       학술지
-├── board.html         자유게시판
+├── index.html         홈
+├── greeting.html       학회소개 > 학회장인사말
+├── about.html          학회소개 > 학회소개(개요)
+├── articles.html       학회소개 > 학회정관(전문)
+├── organization.html   학회소개 > 학회구성
+├── location.html       학회소개 > 오시는 길
+├── notices.html        공지사항
+├── research.html       연구활동
+├── journal.html        학술지
+├── board.html          자유게시판
 ├── archive.html        자료실
 ├── assets/
 │   ├── style.css       공통 디자인
@@ -24,6 +28,19 @@ ksbc-website/
 └── files/
     └── 한국방송비평학회_정관.pdf   정관 원문
 ```
+
+"학회소개"는 상단 메뉴에서 마우스를 올리면(또는 모바일에서 탭하면) 5개 하위 메뉴가 펼쳐지는
+드롭다운 구조입니다. 각 하위 페이지 상단에도 동일한 5개 탭이 있어 하위 페이지 간 이동이
+쉽습니다.
+
+### 채워 넣어야 할 임시(placeholder) 내용
+
+다음 세 페이지는 실제 정보가 없어 예시 문구로 채워두었습니다. 배포 전에 실제 내용으로
+교체해 주세요.
+
+- `greeting.html` — 학회장 인사말 (현재 임시 초안)
+- `organization.html` 하단 "현직 임원 명단" 표 — 실제 회장·부회장·이사·감사 성함
+- `location.html` — 실제 주소, 전화번호, 이메일, 지도(iframe)
 
 ## GitHub Pages에 올리는 방법
 
