@@ -338,7 +338,7 @@ main { min-height: 60vh; }
 
 /* Table */
 table.info-table {
-  width: 80%;
+  width: 60%;
   border-collapse: collapse;
   margin: 16px 0;
 }
