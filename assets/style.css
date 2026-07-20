@@ -410,9 +410,22 @@ table.info-table th {
   color: var(--text);
   margin: 16px 0;
 }
-.banner-card { padding: 0; overflow: hidden; }
-.banner-img { width: 100%; height: auto; display: block; }
+.banner-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;      /* 원하는 통일 높이로 조절 가능 */
+  background: #fff;
+}
 
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* 이미지 비율 유지하며 박스에 맞춤 (잘림 없음) */
+  display: block;
+}
 
 /* Footer */
 .site-footer {
