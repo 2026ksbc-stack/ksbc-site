@@ -341,7 +341,6 @@ table.info-table {
   width: 100%;
   border-collapse: collapse;
   margin: 16px 0;
-  table-layout: fixed;
 }
 table.info-table th, table.info-table td {
   border: 1px solid var(--border);
@@ -352,18 +351,23 @@ table.info-table th, table.info-table td {
 table.info-table th {
   background: var(--bg-soft);
   color: var(--navy);
+  width: 160px;
 }
-table.info-table th:first-child,
-table.info-table td:first-child {
+
+/* 임원진 표(3칸)만 별도 적용 */
+table.info-table--org {
+  table-layout: fixed;
+}
+table.info-table--org th:first-child,
+table.info-table--org td:first-child {
   width: 120px;
 }
-table.info-table th:nth-child(2),
-table.info-table td:nth-child(2) {
+table.info-table--org th:nth-child(2),
+table.info-table--org td:nth-child(2) {
   width: 140px;
 }
-table.info-table th:nth-child(3),
-table.info-table td:nth-child(3) {
-  width: 250px;
+table.info-table--org th {
+  width: auto; /* 공용 규칙의 width:160px를 이 표에서만 무효화 */
 }
 
 /* Org chart list */
