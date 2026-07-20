@@ -337,11 +337,6 @@ main { min-height: 60vh; }
 .back-link { display: inline-block; margin-top: 20px; }
 
 /* Table */
-table.info-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 16px 0;
-}
 table.info-table th, table.info-table td {
   border: 1px solid var(--border);
   padding: 10px 14px;
@@ -350,8 +345,10 @@ table.info-table th, table.info-table td {
 }
 table.info-table th {
   background: var(--bg-soft);
-  width: 160px;
   color: var(--navy);
+}
+table.info-table th:first-child {
+  width: 160px;
 }
 
 /* Org chart list */
