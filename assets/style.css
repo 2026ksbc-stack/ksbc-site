@@ -410,6 +410,9 @@ table.info-table th {
   color: var(--text);
   margin: 16px 0;
 }
+.banner-card { padding: 0; overflow: hidden; }
+.banner-img { width: 100%; height: auto; display: block; }
+
 
 /* Footer */
 .site-footer {
@@ -426,6 +429,7 @@ table.info-table th {
   gap: 12px;
 }
 .site-footer a { color: #d7deea; }
+
 
 /* Responsive */
 @media (max-width: 640px) {
