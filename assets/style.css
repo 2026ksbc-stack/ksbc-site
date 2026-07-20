@@ -361,6 +361,10 @@ table.info-table th:nth-child(2),
 table.info-table td:nth-child(2) {
   width: 140px;
 }
+table.info-table th:nth-child(3),
+table.info-table td:nth-child(3) {
+  width: 250px;
+}
 
 /* Org chart list */
 .org-list { list-style: none; padding: 0; margin: 16px 0; }
