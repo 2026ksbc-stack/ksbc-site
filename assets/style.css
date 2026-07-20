@@ -426,6 +426,10 @@ table.info-table th {
   object-fit: contain;  /* 이미지 비율 유지하며 박스에 맞춤 (잘림 없음) */
   display: block;
 }
+.info-table thead th {
+  background: #333;
+  color: #fff;
+}
 
 /* Footer */
 .site-footer {
