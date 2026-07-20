@@ -337,6 +337,12 @@ main { min-height: 60vh; }
 .back-link { display: inline-block; margin-top: 20px; }
 
 /* Table */
+table.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  table-layout: fixed;
+}
 table.info-table th, table.info-table td {
   border: 1px solid var(--border);
   padding: 10px 14px;
@@ -347,8 +353,13 @@ table.info-table th {
   background: var(--bg-soft);
   color: var(--navy);
 }
-table.info-table th:first-child {
-  width: 160px;
+table.info-table th:first-child,
+table.info-table td:first-child {
+  width: 120px;
+}
+table.info-table th:nth-child(2),
+table.info-table td:nth-child(2) {
+  width: 140px;
 }
 
 /* Org chart list */
