@@ -281,7 +281,6 @@ main { min-height: 60vh; }
   gap: 16px;
   padding: 16px 8px;
   color: var(--text);
-  font-size: 2rem;	
 }
 .item-list a.item-row:hover { background: var(--blue-light); text-decoration: none; }
 .item-title { font-weight: 500; flex: 1; }
