@@ -38,15 +38,15 @@ img { max-width: 100%; }
 }
 
 .grid-container.col-sm-12 {
-    display: flex;   /* 또는 grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .grid-container.col-sm-12 .card {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    height: 100%;
+    min-width: 0;
 }
 
 .card .button-group {
