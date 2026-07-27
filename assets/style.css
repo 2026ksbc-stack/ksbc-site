@@ -38,13 +38,19 @@ img { max-width: 100%; }
 }
 
 .grid-container.col-sm-12 {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;   /* 또는 grid */
     gap: 20px;
 }
 
 .grid-container.col-sm-12 .card {
-    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.card .button-group {
+    margin-top: auto;
 }
 
 /* Header */
