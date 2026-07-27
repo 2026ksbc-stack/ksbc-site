@@ -511,6 +511,11 @@ table.info-table--org th {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+.award-layout .info-table {
+  flex: 2;
+  min-width: 280px;
+  margin-top: 0;   /* 표 기본 margin-top:16px를 상쇄해 사진 상단과 맞춤 */
+}
 @media (max-width: 640px) {
   .award-layout { flex-direction: column; }
 }
