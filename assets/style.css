@@ -225,6 +225,12 @@ main { min-height: 60vh; }
   margin: 24px 0 10px;
   color: var(--navy);
 }
+.banner-section {
+		padding-top: 72px;
+		padding-bottom: 74px;
+		background-color: #fcfcff;
+}
+  
 
 /* Cards */
 .card-grid {
