@@ -37,10 +37,14 @@ img { max-width: 100%; }
   padding: 0 24px;
 }
 
-.grid-container.col-sm-12 {
+.grid-container.col-sm-12 .card {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card .button-group {
+    margin-top: auto;
 }
 
 .grid-container.col-sm-12 .card {
