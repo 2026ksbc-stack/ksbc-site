@@ -37,6 +37,16 @@ img { max-width: 100%; }
   padding: 0 24px;
 }
 
+.grid-container.col-sm-12 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grid-container.col-sm-12 .card {
+    flex: 1 1 calc(50% - 20px);
+}
+
 /* Header */
 .site-header {
   background: var(--navy);
@@ -459,6 +469,8 @@ table.info-table--org th {
    gap: 12px;
    justify-content: center;
 }
+
+
 
 
 /* Footer */
