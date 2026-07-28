@@ -375,6 +375,10 @@ table.info-table th {
   color: var(--navy);
   width: 160px;
 }
+table.info-table th,
+table.info-table td {
+  text-align: center;
+}
 table.info-table th:first-child,
 table.info-table td:first-child {
   width: 100px;
@@ -391,6 +395,10 @@ table.info-table th {
 /* 임원진 표(3칸)만 별도 적용 */
 table.info-table--org {
   table-layout: fixed;
+}
+table.info-table--org th,
+table.info-table--org td {
+  text-align: center;
 }
 table.info-table--org th:first-child,
 table.info-table--org td:first-child {
