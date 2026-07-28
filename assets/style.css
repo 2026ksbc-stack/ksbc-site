@@ -358,7 +358,7 @@ main { min-height: 60vh; }
 .detail-body { white-space: pre-wrap; }
 .back-link { display: inline-block; margin-top: 20px; }
 
-/* Table */
+/* Table(표) */
 table.info-table {
   width: 60%;
   border-collapse: collapse;
@@ -385,7 +385,7 @@ table.info-table td:first-child {
 }
 table.info-table th:nth-child(2),
 table.info-table td:nth-child(2) {
-  width: 150px;
+  width: 180px;
 }
 table.info-table th {
   width: auto; /* 공용 규칙의 width:160px를 이 표에서만 무효화 */
