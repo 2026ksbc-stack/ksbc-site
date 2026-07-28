@@ -465,8 +465,8 @@ table.info-table--org th {
   display: block;
 }
 .info-table thead th {
-  background: #333;
-  color: #fff;
+  background: #f0f0f0;
+  color: var(--navy);
 }
 
 /* 버튼 그룹 */
