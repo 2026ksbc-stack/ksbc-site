@@ -382,11 +382,11 @@ table.info-table--org {
 }
 table.info-table--org th:first-child,
 table.info-table--org td:first-child {
-  width: 120px;
+  width: 80px;
 }
 table.info-table--org th:nth-child(2),
 table.info-table--org td:nth-child(2) {
-  width: 140px;
+  width: 100px;
 }
 table.info-table--org th {
   width: auto; /* 공용 규칙의 width:160px를 이 표에서만 무효화 */
