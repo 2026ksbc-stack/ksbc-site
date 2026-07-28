@@ -375,6 +375,18 @@ table.info-table th {
   color: var(--navy);
   width: 160px;
 }
+table.info-table th:first-child,
+table.info-table td:first-child {
+  width: 100px;
+}
+table.info-table th:nth-child(2),
+table.info-table td:nth-child(2) {
+  width: 120px;
+}
+table.info-table th {
+  width: auto; /* 공용 규칙의 width:160px를 이 표에서만 무효화 */
+}
+
 
 /* 임원진 표(3칸)만 별도 적용 */
 table.info-table--org {
