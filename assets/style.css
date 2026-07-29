@@ -552,17 +552,7 @@ table.info-table--org th {
   table.info-table {
     width: 100%;
   }
-  table.info-table--org {
-    table-layout: auto;
-  }
-  table.info-table--org th:first-child,
-  table.info-table--org td:first-child,
-  table.info-table--org th:nth-child(2),
-  table.info-table--org td:nth-child(2) {
-    width: auto;
-  }
 }
-
 
 /* Footer */
 .site-footer {
