@@ -564,6 +564,11 @@ table.info-table--org th {
     width: 100%;
   }
 }
+@media (max-width: 640px) {
+  .grid-container.col-sm-12 {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Footer */
 .site-footer {
