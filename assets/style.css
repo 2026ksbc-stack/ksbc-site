@@ -184,7 +184,18 @@ img { max-width: 100%; }
   .main-nav .dropdown:focus-within .dropdown-menu {
     display: block;
   }
+  .grid-container.col-sm-12 {
+    flex-direction: column;
+  }
+  .grid-container.col-sm-12 .card {
+    flex: none;
+    height: auto;
+  }
+  .award-photo {
+    width: 100%;
+  }
 }
+
 
 /* Hero */
 .hero {
