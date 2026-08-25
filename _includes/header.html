@@ -1,1 +1,27 @@
-
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="한국방송비평학회 로고" class="brand-logo">
+      <span class="brand-kr">사단법인 한국방송비평학회</span>
+      <span class="brand-en">Korean Society for Broadcasting Criticism (KSBC)</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html"{% if page.name == "index.html" %} class="active"{% endif %}>홈</a>
+      <div class="dropdown">
+        <a href="about.html" class="dropdown-toggle{% if page.name == "greeting.html" or page.name == "about.html" or page.name == "articles.html" or page.name == "organization.html" or page.name == "location.html" %} active{% endif %}">학회소개</a>
+        <div class="dropdown-menu">
+          <a href="greeting.html"{% if page.name == "greeting.html" %} class="active"{% endif %}>학회장인사말</a>
+          <a href="about.html"{% if page.name == "about.html" %} class="active"{% endif %}>학회소개</a>
+          <a href="articles.html"{% if page.name == "articles.html" %} class="active"{% endif %}>학회정관</a>
+          <a href="organization.html"{% if page.name == "organization.html" %} class="active"{% endif %}>학회구성</a>
+          <a href="location.html"{% if page.name == "location.html" %} class="active"{% endif %}>오시는 길</a>
+        </div>
+      </div>
+      <a href="notices.html"{% if page.name == "notices.html" %} class="active"{% endif %}>공지사항</a>
+      <a href="criticism.html"{% if page.name == "criticism.html" %} class="active"{% endif %}>방송비평상</a>
+      <a href="journal.html"{% if page.name == "journal.html" %} class="active"{% endif %}>학술지</a>
+      <a href="board.html"{% if page.name == "board.html" %} class="active"{% endif %}>자유게시판</a>
+      <a href="archive.html"{% if page.name == "archive.html" %} class="active"{% endif %}>자료실</a>
+    </nav>
+  </div>
+</header>

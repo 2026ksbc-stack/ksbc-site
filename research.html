@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,38 +10,7 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="index.html">
-      <span class="brand-kr">사단법인 한국방송비평학회</span>
-      <span class="brand-en">Korean Society for Broadcasting Criticism (KSBC)</span>
-    </a>
-    <nav class="main-nav">
-      <a href="index.html">홈</a>
-      <div class="dropdown">
-        <a href="about.html" class="dropdown-toggle">학회소개</a>
-        <div class="dropdown-menu">
-          <a href="greeting.html">학회장인사말</a>
-          <a href="about.html">학회소개</a>
-          <a href="articles.html">학회정관</a>
-          <a href="organization.html">학회구성</a>
-          <a href="location.html">오시는 길</a>
-        </div>
-      </div>
-      <a href="notices.html">공지사항</a>
-      <div class="dropdown">
-      <a href="research.html" class="dropdown-toggle active">연구활동</a>
-        <div class="dropdown-menu">
-          <a href="research.html">연구활동</a>
-          <a href="criticism.html">방송비평상</a>
-        </div>
-      </div>
-      <a href="journal.html">학술지</a>
-      <a href="board.html">자유게시판</a>
-      <a href="archive.html">자료실</a>
-    </nav>
-  </div>
-</header>
+{% include header.html %}
 
 <main>
 
@@ -92,12 +63,7 @@
 
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div>&copy; <span id="year"></span> 사단법인 한국방송비평학회 (Korean Society for Broadcasting Criticism). All rights reserved.</div>
-    <div><a href="archive.html">정관 및 자료 보기</a></div>
-  </div>
-</footer>
+{% include footer.html %}
 
 <script src="assets/script.js"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
