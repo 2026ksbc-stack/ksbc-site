@@ -506,6 +506,19 @@ table.info-table--org th {
   display: block;
   margin: 12px 0 20px;
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  height: 40px;   /* 헤더 높이에 맞게 조절 */
+  width: auto;
+}
+
+
 /* Footer */
 .site-footer {
   background: var(--navy-dark);
