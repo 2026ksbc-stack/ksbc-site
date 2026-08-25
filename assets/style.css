@@ -62,22 +62,42 @@ img { max-width: 100%; }
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .brand {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
   color: #fff;
+  text-decoration: none;
 }
 .brand:hover { text-decoration: none; }
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .brand-kr {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
+
 .brand-en {
   font-size: 0.72rem;
   color: #c9d4e3;
   letter-spacing: 0.03em;
 }
+
+
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -507,16 +527,7 @@ table.info-table--org th {
   margin: 12px 0 20px;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-.brand-logo {
-  height: 40px;   /* 헤더 높이에 맞게 조절 */
-  width: auto;
-}
 
 
 /* Footer */
