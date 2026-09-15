@@ -74,29 +74,10 @@ img { max-width: 100%; }
 .brand:hover { text-decoration: none; }
 
 .brand-logo {
-  height: 48px;
+  height: 44px;
   width: auto;
   flex-shrink: 0;
 }
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.brand-kr {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.brand-en {
-  font-size: 0.72rem;
-  color: #c9d4e3;
-  letter-spacing: 0.03em;
-}
-
-
 
 .main-nav {
   display: flex;
