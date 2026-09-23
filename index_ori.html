@@ -11,17 +11,6 @@
 </head>
 <body>
 
-<!-- 팝업 -->
-<div id="popup-overlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:9999; align-items:center; justify-content:center;">
-  <div style="background:#fff; max-width:420px; width:90%; padding:20px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.25); position:relative;">
-    <button onclick="closePopup()" aria-label="닫기" style="position:absolute; top:10px; right:10px; border:none; background:#fff; border-radius:50%; width:28px; height:28px; font-size:16px; line-height:1; cursor:pointer; box-shadow:0 1px 4px rgba(0,0,0,0.2);">✕</button>
-    <img src="images/chuseok.png" alt="추석 안내" style="width:100%; display:block; border-radius:8px;">
-    <label style="font-size:13px; color:#666; display:block; margin-top:14px; text-align:center; cursor:pointer;">
-      <input type="checkbox" id="hide-today"> 오늘 하루 보지 않기
-    </label>
-  </div>
-</div>
-
 {% include header.html %}
 
 <main>
@@ -52,7 +41,7 @@
     </div>
   </section>
 
--->
+--> 
 
     <section class="section">
     <div class="container">
@@ -73,8 +62,8 @@
 								</div>
 							</article>
 							<div class="award-photo">
-     					 <img src="images/awards/awards-photo.png" alt="시상식 단체사진">
-    </div>
+         					 <img src="images/awards/awards-photo.png" alt="시상식 단체사진">
+        </div>
 							<!--
 							<article class="card">
 								<div>
@@ -94,7 +83,7 @@
 	</section>
 
 
-
+  
   <section class="section alt">
     <div class="container">
       <h2>관계기관</h2>
@@ -117,7 +106,7 @@
       </div>
     </div>
   </section>
-
+  
 </main>
 
 {% include footer.html %}
@@ -131,27 +120,6 @@
       document.getElementById("notice-preview").innerHTML = '<li class="empty-state">공지사항을 불러오지 못했습니다.</li>';
       console.error(err);
     });
-
-  // 팝업
-  function closePopup() {
-    document.getElementById('popup-overlay').style.display = 'none';
-    if (document.getElementById('hide-today').checked) {
-      const tomorrow = new Date();
-      tomorrow.setHours(24, 0, 0, 0);
-      localStorage.setItem('popup-hide-until', tomorrow.getTime());
-    }
-  }
-
-  window.addEventListener('load', function () {
-    const hideUntil = localStorage.getItem('popup-hide-until');
-    if (!hideUntil || Date.now() > Number(hideUntil)) {
-      document.getElementById('popup-overlay').style.display = 'flex';
-    }
-  });
-
-  document.getElementById('popup-overlay').addEventListener('click', function (e) {
-    if (e.target === this) closePopup();
-  });
 </script>
 
 </body>
