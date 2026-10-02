@@ -16,8 +16,10 @@
   .history-year:first-of-type{border-top:0}
   .history-year-title{margin:0;font-size:28px;font-weight:700;line-height:1.2}
   .history-year .timeline{margin:0}
-  .history-year .t-date{display:inline-block;min-width:72px}
-  @media (max-width:640px){.history-year{grid-template-columns:1fr;gap:10px;padding:20px 0}.history-year-title{font-size:22px}}
+  .history-year .timeline li{display:grid;grid-template-columns:72px 1fr;column-gap:16px;align-items:start}
+  .history-year .t-date{display:block;min-width:0;white-space:nowrap}
+  .history-year .t-text{display:block;min-width:0;word-break:keep-all;overflow-wrap:anywhere}
+  @media (max-width:640px){.history-year{grid-template-columns:1fr;gap:10px;padding:20px 0}.history-year-title{font-size:22px}.history-year .timeline li{grid-template-columns:56px 1fr;column-gap:12px}}
 </style>
 </head>
 <body>
@@ -56,339 +58,339 @@
       <span id="y2020s" class="history-anchor"></span><div class="history-year" id="y2026">
         <h3 class="history-year-title">2026</h3>
         <ul class="timeline">
-          <li><span class="t-date">7.13</span> 총회 개정 — 제1차 정관 개정</li>
+          <li><span class="t-date">7.13</span><span class="t-text">총회 개정 — 제1차 정관 개정</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2025">
         <h3 class="history-year-title">2025</h3>
         <ul class="timeline">
-          <li><span class="t-date">2.26</span> 2024 방송비평상 시상식</li>
+          <li><span class="t-date">2.26</span><span class="t-text">2024 방송비평상 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2024">
         <h3 class="history-year-title">2024</h3>
         <ul class="timeline">
-          <li><span class="t-date">2.28</span> 2023 방송비평상 시상식</li>
+          <li><span class="t-date">2.28</span><span class="t-text">2023 방송비평상 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2022">
         <h3 class="history-year-title">2022</h3>
         <ul class="timeline">
-          <li><span class="t-date">4.1</span> ‘미디어 사색주간 기념’ 세미나</li>
-          <li><span class="t-date">5.13</span> ‘우리나라 미디어문화콘텐츠 제작 현실과 발전 방향’ 월평회</li>
-          <li><span class="t-date">6.24</span> ‘메타버스 시대, 콘텐츠 산업에서 IP의 역할 변화와 재개념화’ 월평회</li>
-          <li><span class="t-date">8.18</span> ‘미디어플랫폼과 E커머스’ 월평회</li>
-          <li><span class="t-date">9.1</span> ‘수용자 제대로 인식하기 주간’ 기념토론회 세미나</li>
-          <li><span class="t-date">12.8</span> 제15회 ‘한국방송비평상 시상식’</li>
+          <li><span class="t-date">4.1</span><span class="t-text">‘미디어 사색주간 기념’ 세미나</span></li>
+          <li><span class="t-date">5.13</span><span class="t-text">‘우리나라 미디어문화콘텐츠 제작 현실과 발전 방향’ 월평회</span></li>
+          <li><span class="t-date">6.24</span><span class="t-text">‘메타버스 시대, 콘텐츠 산업에서 IP의 역할 변화와 재개념화’ 월평회</span></li>
+          <li><span class="t-date">8.18</span><span class="t-text">‘미디어플랫폼과 E커머스’ 월평회</span></li>
+          <li><span class="t-date">9.1</span><span class="t-text">‘수용자 제대로 인식하기 주간’ 기념토론회 세미나</span></li>
+          <li><span class="t-date">12.8</span><span class="t-text">제15회 ‘한국방송비평상 시상식’</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2021">
         <h3 class="history-year-title">2021</h3>
         <ul class="timeline">
-          <li><span class="t-date">6.25</span> 2021매거진미디어융합학회 · (사)방송비평학회 공동학술대회</li>
-          <li><span class="t-date">9.14</span> 방송비평학회 월평회</li>
-          <li><span class="t-date">12.9</span> 제14회 방송비평상시상식</li>
+          <li><span class="t-date">6.25</span><span class="t-text">2021매거진미디어융합학회 · (사)방송비평학회 공동학술대회</span></li>
+          <li><span class="t-date">9.14</span><span class="t-text">방송비평학회 월평회</span></li>
+          <li><span class="t-date">12.9</span><span class="t-text">제14회 방송비평상시상식</span></li>
         </ul>
       </div>
 
       <span id="y2010s" class="history-anchor"></span><div class="history-year" id="y2018">
         <h3 class="history-year-title">2018</h3>
         <ul class="timeline">
-          <li><span class="t-date">2.1</span> 정기총회(뉴국제호텔 15층 두메라룸)</li>
-          <li><span class="t-date">8.9</span> 학회 홈페이지 오픈</li>
-          <li><span class="t-date">12.17</span> 제13회 방송비평상시상식</li>
+          <li><span class="t-date">2.1</span><span class="t-text">정기총회(뉴국제호텔 15층 두메라룸)</span></li>
+          <li><span class="t-date">8.9</span><span class="t-text">학회 홈페이지 오픈</span></li>
+          <li><span class="t-date">12.17</span><span class="t-text">제13회 방송비평상시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2017">
         <h3 class="history-year-title">2017</h3>
         <ul class="timeline">
-          <li><span class="t-date">2.2</span> 〈최순실 게이트와 방송〉(주제 발표 : 강용식 21세기 방송통신연구소 이사장) 세미나 · 신년하례회 개최</li>
-          <li><span class="t-date">12.14</span> 제12회 방송비평상 시상식 및 좋은방송포럼(2017 방송 프로그램 총평)</li>
+          <li><span class="t-date">2.2</span><span class="t-text">〈최순실 게이트와 방송〉(주제 발표 : 강용식 21세기 방송통신연구소 이사장) 세미나 · 신년하례회 개최</span></li>
+          <li><span class="t-date">12.14</span><span class="t-text">제12회 방송비평상 시상식 및 좋은방송포럼(2017 방송 프로그램 총평)</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2016">
         <h3 class="history-year-title">2016</h3>
         <ul class="timeline">
-          <li><span class="t-date">9.1</span> ‘한국방송비평회’를 ‘좋은방송포럼’으로 개칭</li>
-          <li><span class="t-date">9.8</span> 한국문화산업교류재단, 21세기 방송통신 연구소와 공동 세미나 “한류 지속 발전을 위한 방송 콘텐츠 활성화 방안”</li>
-          <li><span class="t-date">12.15</span> 제11회 방송비평상 시상식 및 좋은방송포럼(2016 방송프로그램 총평)</li>
+          <li><span class="t-date">9.1</span><span class="t-text">‘한국방송비평회’를 ‘좋은방송포럼’으로 개칭</span></li>
+          <li><span class="t-date">9.8</span><span class="t-text">한국문화산업교류재단, 21세기 방송통신 연구소와 공동 세미나 “한류 지속 발전을 위한 방송 콘텐츠 활성화 방안”</span></li>
+          <li><span class="t-date">12.15</span><span class="t-text">제11회 방송비평상 시상식 및 좋은방송포럼(2016 방송프로그램 총평)</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2015">
         <h3 class="history-year-title">2015</h3>
         <ul class="timeline">
-          <li><span class="t-date">5.9</span> 방송통신심의위원회와 공동 토론회 “저품격 드라마의 문제점과 개선 방향”</li>
-          <li><span class="t-date">9.1</span> 방송의 날 52주년 기념세미나 “종편 이후, 방송저널리즘의 공정성을 진단한다”</li>
-          <li><span class="t-date">12.16</span> 제10회 방송비평상 시상식 및 좋은방송포럼(2015 방송프로그램 총평)</li>
+          <li><span class="t-date">5.9</span><span class="t-text">방송통신심의위원회와 공동 토론회 “저품격 드라마의 문제점과 개선 방향”</span></li>
+          <li><span class="t-date">9.1</span><span class="t-text">방송의 날 52주년 기념세미나 “종편 이후, 방송저널리즘의 공정성을 진단한다”</span></li>
+          <li><span class="t-date">12.16</span><span class="t-text">제10회 방송비평상 시상식 및 좋은방송포럼(2015 방송프로그램 총평)</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2014">
         <h3 class="history-year-title">2014</h3>
         <ul class="timeline">
-          <li><span class="t-date">10.2</span> 긴급 총회, 정중헌 회원을 한국비평학회 회장에, 유일기 회원을 한국방송비평회 회장으로 선임</li>
-          <li><span class="t-date">12.17</span> 좋은방송포럼 “2014 한국방송프로그램 총평-드라마 · 예능 · 교양 · 보도를 중심으로” 및 제9회 한국방송비평상 시상식</li>
+          <li><span class="t-date">10.2</span><span class="t-text">긴급 총회, 정중헌 회원을 한국비평학회 회장에, 유일기 회원을 한국방송비평회 회장으로 선임</span></li>
+          <li><span class="t-date">12.17</span><span class="t-text">좋은방송포럼 “2014 한국방송프로그램 총평-드라마 · 예능 · 교양 · 보도를 중심으로” 및 제9회 한국방송비평상 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2013">
         <h3 class="history-year-title">2013</h3>
         <ul class="timeline">
-          <li><span class="t-date">10.24</span> (사)한국방송비평학회 창립기념 심포지엄 “방송비평학의 정립과 방송비평 활성화 방안”</li>
-          <li><span class="t-date">12.18</span> 방송비평 포럼 “2013 한국방송을 진단평가한다” 및 제8회 방송비평상 시상식</li>
+          <li><span class="t-date">10.24</span><span class="t-text">(사)한국방송비평학회 창립기념 심포지엄 “방송비평학의 정립과 방송비평 활성화 방안”</span></li>
+          <li><span class="t-date">12.18</span><span class="t-text">방송비평 포럼 “2013 한국방송을 진단평가한다” 및 제8회 방송비평상 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2012">
         <h3 class="history-year-title">2012</h3>
         <ul class="timeline">
-          <li><span class="t-date">10.5</span> 비평회 포럼 “대선 방송 이대로 좋은가?”</li>
-          <li><span class="t-date">12.12</span> 송년 방송비평 포럼 “TV 드라마 2012, 평가와 과제” 및 제7회 방송비평상 시상식</li>
+          <li><span class="t-date">10.5</span><span class="t-text">비평회 포럼 “대선 방송 이대로 좋은가?”</span></li>
+          <li><span class="t-date">12.12</span><span class="t-text">송년 방송비평 포럼 “TV 드라마 2012, 평가와 과제” 및 제7회 방송비평상 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2011">
         <h3 class="history-year-title">2011</h3>
         <ul class="timeline">
-          <li><span class="t-date">12.12</span> 좋은방송포럼 “스마트 미디어 시대 방송광고의 변화와 규제” 및 제6회 좋은 방송 프로그램상 시상식</li>
+          <li><span class="t-date">12.12</span><span class="t-text">좋은방송포럼 “스마트 미디어 시대 방송광고의 변화와 규제” 및 제6회 좋은 방송 프로그램상 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2010">
         <h3 class="history-year-title">2010</h3>
         <ul class="timeline">
-          <li><span class="t-date">12.15</span> 라운드테이블 및 제5회 좋은 방송 프로그램상 시상식</li>
+          <li><span class="t-date">12.15</span><span class="t-text">라운드테이블 및 제5회 좋은 방송 프로그램상 시상식</span></li>
         </ul>
       </div>
 
       <span id="y2000s" class="history-anchor"></span><div class="history-year" id="y2009">
         <h3 class="history-year-title">2009</h3>
         <ul class="timeline">
-          <li><span class="t-date">12.23</span> 제6회 좋은방송포럼 “수용자를 위한 방송, 방송을 위한 수용자” 및 제4회 좋은 방송 프로그램 시상식</li>
+          <li><span class="t-date">12.23</span><span class="t-text">제6회 좋은방송포럼 “수용자를 위한 방송, 방송을 위한 수용자” 및 제4회 좋은 방송 프로그램 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2008">
         <h3 class="history-year-title">2008</h3>
         <ul class="timeline">
-          <li><span class="t-date">12.19</span> 제5회 좋은방송포럼 및 제3회 좋은 방송 프로그램상 시상식</li>
+          <li><span class="t-date">12.19</span><span class="t-text">제5회 좋은방송포럼 및 제3회 좋은 방송 프로그램상 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2007">
         <h3 class="history-year-title">2007</h3>
         <ul class="timeline">
-          <li><span class="t-date">3.13</span> 총회 제정 — 초대 정관 제정</li>
-          <li><span class="t-date">4.13</span> 사단법인 한국방송비평학회 설립 총회</li>
-          <li><span class="t-date">7.19</span> 제3회 좋은방송포럼 “한국 텔레비전 방송의 윤리성에 대한 비평”</li>
-          <li><span class="t-date">7.31</span> 한국방송비평학회 사단법인 설립 허가</li>
-          <li><span class="t-date">12.20</span> 제4회 좋은방송포럼 “지상파 방송 2007년의 성과와 2008년의 과제” 및 제2회 좋은 방송 프로그램 시상식</li>
+          <li><span class="t-date">3.13</span><span class="t-text">총회 제정 — 초대 정관 제정</span></li>
+          <li><span class="t-date">4.13</span><span class="t-text">사단법인 한국방송비평학회 설립 총회</span></li>
+          <li><span class="t-date">7.19</span><span class="t-text">제3회 좋은방송포럼 “한국 텔레비전 방송의 윤리성에 대한 비평”</span></li>
+          <li><span class="t-date">7.31</span><span class="t-text">한국방송비평학회 사단법인 설립 허가</span></li>
+          <li><span class="t-date">12.20</span><span class="t-text">제4회 좋은방송포럼 “지상파 방송 2007년의 성과와 2008년의 과제” 및 제2회 좋은 방송 프로그램 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2006">
         <h3 class="history-year-title">2006</h3>
         <ul class="timeline">
-          <li><span class="t-date">1.27</span> 제1회 좋은방송포럼 “방송통신융합형 신매체의 도입 정책과 콘텐츠 전망”</li>
-          <li><span class="t-date">11.30</span> 제2회 좋은방송포럼 “좋은 방송(Good Broadcasting)을 위한 전문 비평과 새로운 모색” 및 제1회 좋은 방송 프로그램상 시상식</li>
+          <li><span class="t-date">1.27</span><span class="t-text">제1회 좋은방송포럼 “방송통신융합형 신매체의 도입 정책과 콘텐츠 전망”</span></li>
+          <li><span class="t-date">11.30</span><span class="t-text">제2회 좋은방송포럼 “좋은 방송(Good Broadcasting)을 위한 전문 비평과 새로운 모색” 및 제1회 좋은 방송 프로그램상 시상식</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2005">
         <h3 class="history-year-title">2005</h3>
         <ul class="timeline">
-          <li><span class="t-date">6.14</span> 쟁점토론회 “경인지역 지상파 방송 허가, 어떻게 할 것인가?”</li>
-          <li><span class="t-date">12.23</span> 한국문화컨텐츠학회와 공동주최 토론회 “컨버전스 시대의 방송 영상 콘텐츠 시장 활성화”</li>
-          <li><span class="t-date">12.23</span> 정기총회 개최. 회장 변동현(서강대 영상대학원 교수), 부회장 김기태(호남대 신방과 교수) 이경순(영상물등급위원회 위원장) 선임</li>
+          <li><span class="t-date">6.14</span><span class="t-text">쟁점토론회 “경인지역 지상파 방송 허가, 어떻게 할 것인가?”</span></li>
+          <li><span class="t-date">12.23</span><span class="t-text">한국문화컨텐츠학회와 공동주최 토론회 “컨버전스 시대의 방송 영상 콘텐츠 시장 활성화”</span></li>
+          <li><span class="t-date">12.23</span><span class="t-text">정기총회 개최. 회장 변동현(서강대 영상대학원 교수), 부회장 김기태(호남대 신방과 교수) 이경순(영상물등급위원회 위원장) 선임</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2004">
         <h3 class="history-year-title">2004</h3>
         <ul class="timeline">
-          <li><span class="t-date">4.28</span> MBC 〈TV 속의 TV〉 500회 기념 비평토론회 “시청자 주권과 옴부즈만 프로그램”</li>
+          <li><span class="t-date">4.28</span><span class="t-text">MBC 〈TV 속의 TV〉 500회 기념 비평토론회 “시청자 주권과 옴부즈만 프로그램”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2003">
         <h3 class="history-year-title">2003</h3>
         <ul class="timeline">
-          <li><span class="t-date">1.22</span> MBC와 공동세미나 “방송 공익성 논쟁의 현실과 실현 방안”</li>
+          <li><span class="t-date">1.22</span><span class="t-text">MBC와 공동세미나 “방송 공익성 논쟁의 현실과 실현 방안”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2002">
         <h3 class="history-year-title">2002</h3>
         <ul class="timeline">
-          <li><span class="t-date">4.19</span> 광주전남 방송비평회와 공동주최 심포지엄 “멀티미디어 시대 원자력의 미래와 방송”</li>
-          <li><span class="t-date">10.17</span> 프로그램 비평토론회 “제16대 대통령선거와 방송의 선거보도 평가(1)”</li>
-          <li><span class="t-date">11.20</span> 프로그램 비평토론회 “제16대 대통령선거와 방송의 선거보도 평가(2)”</li>
+          <li><span class="t-date">4.19</span><span class="t-text">광주전남 방송비평회와 공동주최 심포지엄 “멀티미디어 시대 원자력의 미래와 방송”</span></li>
+          <li><span class="t-date">10.17</span><span class="t-text">프로그램 비평토론회 “제16대 대통령선거와 방송의 선거보도 평가(1)”</span></li>
+          <li><span class="t-date">11.20</span><span class="t-text">프로그램 비평토론회 “제16대 대통령선거와 방송의 선거보도 평가(2)”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2001">
         <h3 class="history-year-title">2001</h3>
         <ul class="timeline">
-          <li><span class="t-date">3.16</span> 쟁점토론회 “디지털 시대, 올바른 홈쇼핑 문화 정립을 위한 방안 모색”</li>
-          <li><span class="t-date">5.11</span> 주제가 있는 현장 탐방 “방송과 환경에너지-고리원자력연구소”</li>
-          <li><span class="t-date">7.20</span> 방송비평회 주최 프로그램 토론회 발제문 모음집, 방송문화진흥총서 『방송비평의 실제』(한울아카데미) 발간</li>
-          <li><span class="t-date">11.2</span> 광주 · 전남 방송비평회 창립 12주년 기념 심포지엄 및 시민포럼 “디지털시대 지역방송과 시민”</li>
+          <li><span class="t-date">3.16</span><span class="t-text">쟁점토론회 “디지털 시대, 올바른 홈쇼핑 문화 정립을 위한 방안 모색”</span></li>
+          <li><span class="t-date">5.11</span><span class="t-text">주제가 있는 현장 탐방 “방송과 환경에너지-고리원자력연구소”</span></li>
+          <li><span class="t-date">7.20</span><span class="t-text">방송비평회 주최 프로그램 토론회 발제문 모음집, 방송문화진흥총서 『방송비평의 실제』(한울아카데미) 발간</span></li>
+          <li><span class="t-date">11.2</span><span class="t-text">광주 · 전남 방송비평회 창립 12주년 기념 심포지엄 및 시민포럼 “디지털시대 지역방송과 시민”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y2000">
         <h3 class="history-year-title">2000</h3>
         <ul class="timeline">
-          <li><span class="t-date">7.24</span> 비평토론회 “MBC 드라마 〈허준〉을 다시 읽는다”</li>
+          <li><span class="t-date">7.24</span><span class="t-text">비평토론회 “MBC 드라마 〈허준〉을 다시 읽는다”</span></li>
         </ul>
       </div>
 
       <span id="y1990s" class="history-anchor"></span><div class="history-year" id="y1999">
         <h3 class="history-year-title">1999</h3>
         <ul class="timeline">
-          <li><span class="t-date">10.31</span> 《방송비평》 1999년(통권 14호) 발행</li>
-          <li><span class="t-date">11.4</span> 쟁점토론회 “가학성 프로그램의 실태와 문제점”</li>
-          <li><span class="t-date">11.19~20</span> 토론회 “새천년 방송 발전 모색을 위한 토론회”</li>
-          <li><span class="t-date">12.20</span> 《방송비평》 1999년(통권 15호) 발행</li>
+          <li><span class="t-date">10.31</span><span class="t-text">《방송비평》 1999년(통권 14호) 발행</span></li>
+          <li><span class="t-date">11.4</span><span class="t-text">쟁점토론회 “가학성 프로그램의 실태와 문제점”</span></li>
+          <li><span class="t-date">11.19~20</span><span class="t-text">토론회 “새천년 방송 발전 모색을 위한 토론회”</span></li>
+          <li><span class="t-date">12.20</span><span class="t-text">《방송비평》 1999년(통권 15호) 발행</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1998">
         <h3 class="history-year-title">1998</h3>
         <ul class="timeline">
-          <li><span class="t-date">1.9</span> 《방송비평》 1997 겨울호(통권 11호) 발행</li>
-          <li><span class="t-date">3.13</span> 대토론회 “방송구조 정립을 위한 대토론회”</li>
-          <li><span class="t-date">4.29</span> 쟁점토론회 “영상 소프트웨어 발전 및 진흥방안”</li>
-          <li><span class="t-date">7.20</span> 《방송비평》 1998 봄 · 여름호(통권 12호) 발행</li>
-          <li><span class="t-date">8.19</span> 광주 · 전남 방송비평회 창립 9주년 한마당 “IMF 시대 지역 경제와 방송”</li>
-          <li><span class="t-date">11.19</span> 쟁점토론회 “시청자 평가 프로그램의 현황과 발전방안”</li>
-          <li><span class="t-date">12.4</span> 평가토론회 “1998년 방송 프로그램 종합 평가 토론회”</li>
-          <li><span class="t-date">12.18</span> 《방송비평》 1998 가을 · 겨울호(통권 13호) 발행</li>
+          <li><span class="t-date">1.9</span><span class="t-text">《방송비평》 1997 겨울호(통권 11호) 발행</span></li>
+          <li><span class="t-date">3.13</span><span class="t-text">대토론회 “방송구조 정립을 위한 대토론회”</span></li>
+          <li><span class="t-date">4.29</span><span class="t-text">쟁점토론회 “영상 소프트웨어 발전 및 진흥방안”</span></li>
+          <li><span class="t-date">7.20</span><span class="t-text">《방송비평》 1998 봄 · 여름호(통권 12호) 발행</span></li>
+          <li><span class="t-date">8.19</span><span class="t-text">광주 · 전남 방송비평회 창립 9주년 한마당 “IMF 시대 지역 경제와 방송”</span></li>
+          <li><span class="t-date">11.19</span><span class="t-text">쟁점토론회 “시청자 평가 프로그램의 현황과 발전방안”</span></li>
+          <li><span class="t-date">12.4</span><span class="t-text">평가토론회 “1998년 방송 프로그램 종합 평가 토론회”</span></li>
+          <li><span class="t-date">12.18</span><span class="t-text">《방송비평》 1998 가을 · 겨울호(통권 13호) 발행</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1997">
         <h3 class="history-year-title">1997</h3>
         <ul class="timeline">
-          <li><span class="t-date">2.24</span> 프로그램 비평 토론회 “MBC 일요가족극장 〈간이역〉을 진단한다”</li>
-          <li><span class="t-date">3.27</span> 쟁점토론회 “케이블TV 발전을 위한 대토론회”</li>
-          <li><span class="t-date">5.5</span> 《방송비평》 1997 봄호(통권 8호) 발행</li>
-          <li><span class="t-date">5.7</span> 프로그램 비평토론회 “한보청문회 방송보도, 평가와 과제”</li>
-          <li><span class="t-date">5.31</span> 한국방송비평회 이사회</li>
-          <li><span class="t-date">6.26</span> 비평토론회 “TV 자연다큐멘터리에 대한 소고”</li>
-          <li><span class="t-date">8.20</span> 《방송비평》 1997 여름호(통권 9호) 발행</li>
-          <li><span class="t-date">10.2</span> 방송세미나 “바람직한 대선 TV 토론 프로그램의 방향 모색”</li>
-          <li><span class="t-date">11.1</span> 《방송비평》 1997 가을호(통권 10호) 발행</li>
-          <li><span class="t-date">11.27</span> 쟁점토론회 “KBS 연속사극 〈용의 눈물〉이 제기하는 몇 가지 문제”</li>
+          <li><span class="t-date">2.24</span><span class="t-text">프로그램 비평 토론회 “MBC 일요가족극장 〈간이역〉을 진단한다”</span></li>
+          <li><span class="t-date">3.27</span><span class="t-text">쟁점토론회 “케이블TV 발전을 위한 대토론회”</span></li>
+          <li><span class="t-date">5.5</span><span class="t-text">《방송비평》 1997 봄호(통권 8호) 발행</span></li>
+          <li><span class="t-date">5.7</span><span class="t-text">프로그램 비평토론회 “한보청문회 방송보도, 평가와 과제”</span></li>
+          <li><span class="t-date">5.31</span><span class="t-text">한국방송비평회 이사회</span></li>
+          <li><span class="t-date">6.26</span><span class="t-text">비평토론회 “TV 자연다큐멘터리에 대한 소고”</span></li>
+          <li><span class="t-date">8.20</span><span class="t-text">《방송비평》 1997 여름호(통권 9호) 발행</span></li>
+          <li><span class="t-date">10.2</span><span class="t-text">방송세미나 “바람직한 대선 TV 토론 프로그램의 방향 모색”</span></li>
+          <li><span class="t-date">11.1</span><span class="t-text">《방송비평》 1997 가을호(통권 10호) 발행</span></li>
+          <li><span class="t-date">11.27</span><span class="t-text">쟁점토론회 “KBS 연속사극 〈용의 눈물〉이 제기하는 몇 가지 문제”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1996">
         <h3 class="history-year-title">1996</h3>
         <ul class="timeline">
-          <li><span class="t-date">1.15</span> 《방송비평》 1995 겨울호(통권 3호) 발행</li>
-          <li><span class="t-date">2.28</span> 정기총회. 제4대 회장에 최창섭 서강대 교수 선임, 부회장 정중헌(조선일보 문화부장), 이경순(방송평론가), 총무이사 김기태(동아방송대 교수)</li>
-          <li><span class="t-date">3.29</span> 월례 프로그램 비평토론회 “선거방송 보도 이대로 좋은가”</li>
-          <li><span class="t-date">4.24</span> 월례 프로그램 비평토론회 “장애인 대상 프로그램의 실태와 발전과제”</li>
-          <li><span class="t-date">5.8</span> 월례 프로그램 비평토론회 “어린이 TV 프로그램의 실태와 발전과제”</li>
-          <li><span class="t-date">5.31</span> 쟁점토론회 “통합방송법, 어떻게 할 것인가?”</li>
-          <li><span class="t-date">6.1</span> 《방송비평》 1996 봄호(통권 4호) 발행</li>
-          <li><span class="t-date">6.21</span> 프로그램 비평토론회 “목욕탕집 남자들”</li>
-          <li><span class="t-date">9.1</span> 《방송비평》 1996 여름호(통권 5호) 발행</li>
-          <li><span class="t-date">10.4</span> 중부지역 방송비평회 창립, 회장 전환성(청주대 교수), 감사 임혜순(충북예총회장) 박정규(청주대 교수)</li>
-          <li><span class="t-date">10.5</span> 중부지역 방송비평회 창립총회 기념 세미나. 1주제 “텔레비전 음악 프로그램의 실태와 문제점”, 2주제 “지역성 제고를 위한 지역방송의 역할”</li>
-          <li><span class="t-date">10.23</span> 쟁점 토론회 “방송의 환경 프로그램 현황과 바람직한 제작 방안”</li>
-          <li><span class="t-date">12.1</span> 《방송비평》 1996 가을호(통권 6호) 발행</li>
-          <li><span class="t-date">12.2</span> 본회가 후원하고 대한 YWCA 연합회가 주최하는 ‘제1회 YWCA가 뽑은 좋은 프로그램’ 선정을 위한 심사위원으로 최창섭 · 이경순 · 김기태 회원 참여</li>
-          <li><span class="t-date">12.18</span> 쟁점토론회 “방송과 환경”</li>
-          <li><span class="t-date">12.31</span> 《방송비평》 1996 겨울호(통권 7호) 발행</li>
+          <li><span class="t-date">1.15</span><span class="t-text">《방송비평》 1995 겨울호(통권 3호) 발행</span></li>
+          <li><span class="t-date">2.28</span><span class="t-text">정기총회. 제4대 회장에 최창섭 서강대 교수 선임, 부회장 정중헌(조선일보 문화부장), 이경순(방송평론가), 총무이사 김기태(동아방송대 교수)</span></li>
+          <li><span class="t-date">3.29</span><span class="t-text">월례 프로그램 비평토론회 “선거방송 보도 이대로 좋은가”</span></li>
+          <li><span class="t-date">4.24</span><span class="t-text">월례 프로그램 비평토론회 “장애인 대상 프로그램의 실태와 발전과제”</span></li>
+          <li><span class="t-date">5.8</span><span class="t-text">월례 프로그램 비평토론회 “어린이 TV 프로그램의 실태와 발전과제”</span></li>
+          <li><span class="t-date">5.31</span><span class="t-text">쟁점토론회 “통합방송법, 어떻게 할 것인가?”</span></li>
+          <li><span class="t-date">6.1</span><span class="t-text">《방송비평》 1996 봄호(통권 4호) 발행</span></li>
+          <li><span class="t-date">6.21</span><span class="t-text">프로그램 비평토론회 “목욕탕집 남자들”</span></li>
+          <li><span class="t-date">9.1</span><span class="t-text">《방송비평》 1996 여름호(통권 5호) 발행</span></li>
+          <li><span class="t-date">10.4</span><span class="t-text">중부지역 방송비평회 창립, 회장 전환성(청주대 교수), 감사 임혜순(충북예총회장) 박정규(청주대 교수)</span></li>
+          <li><span class="t-date">10.5</span><span class="t-text">중부지역 방송비평회 창립총회 기념 세미나. 1주제 “텔레비전 음악 프로그램의 실태와 문제점”, 2주제 “지역성 제고를 위한 지역방송의 역할”</span></li>
+          <li><span class="t-date">10.23</span><span class="t-text">쟁점 토론회 “방송의 환경 프로그램 현황과 바람직한 제작 방안”</span></li>
+          <li><span class="t-date">12.1</span><span class="t-text">《방송비평》 1996 가을호(통권 6호) 발행</span></li>
+          <li><span class="t-date">12.2</span><span class="t-text">본회가 후원하고 대한 YWCA 연합회가 주최하는 ‘제1회 YWCA가 뽑은 좋은 프로그램’ 선정을 위한 심사위원으로 최창섭 · 이경순 · 김기태 회원 참여</span></li>
+          <li><span class="t-date">12.18</span><span class="t-text">쟁점토론회 “방송과 환경”</span></li>
+          <li><span class="t-date">12.31</span><span class="t-text">《방송비평》 1996 겨울호(통권 7호) 발행</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1995">
         <h3 class="history-year-title">1995</h3>
         <ul class="timeline">
-          <li><span class="t-date">6.30</span> 비평토론회 “6.27일 지방선거 방송을 해부한다”</li>
-          <li><span class="t-date">8.15</span> 계간 《방송비평》 창간(1995 여름호)</li>
-          <li><span class="t-date">11.18</span> 《방송비평》 1995 가을호(통권 2호) 발행</li>
+          <li><span class="t-date">6.30</span><span class="t-text">비평토론회 “6.27일 지방선거 방송을 해부한다”</span></li>
+          <li><span class="t-date">8.15</span><span class="t-text">계간 《방송비평》 창간(1995 여름호)</span></li>
+          <li><span class="t-date">11.18</span><span class="t-text">《방송비평》 1995 가을호(통권 2호) 발행</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1994">
         <h3 class="history-year-title">1994</h3>
         <ul class="timeline">
-          <li><span class="t-date">3.25</span> 춘계 대토론회 “국제화 시대의 지역언론”, 정례 세미나 “케이블TV 시대의 시청자 권익을 생각한다”(일본 삿포로TV의 오니시 다카요시 초청), 광주 · 전남비평회 “미 오하이오대 Joseph Slade 교수 초청 포럼”</li>
+          <li><span class="t-date">3.25</span><span class="t-text">춘계 대토론회 “국제화 시대의 지역언론”, 정례 세미나 “케이블TV 시대의 시청자 권익을 생각한다”(일본 삿포로TV의 오니시 다카요시 초청), 광주 · 전남비평회 “미 오하이오대 Joseph Slade 교수 초청 포럼”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1993">
         <h3 class="history-year-title">1993</h3>
         <ul class="timeline">
-          <li><span class="t-date">4.26</span> 월례토론회 “새 시대, 새 가치, 새 방송”</li>
-          <li><span class="t-date">10.8</span> 광주 · 전남 방송비평회 개최 및 우수 지역프로그램 시상</li>
-          <li><span class="t-date">10.15</span> 월례비평회. 1주제 “방송교육과 연수의 개발”, 2주제 “방송 조사연구와 편성”, 3주제 “방송심의의 개발”, 4주제 “방송비평의 개발”</li>
-          <li><span class="t-date">12.3</span> 연례 대토론회 및 이사회 개최. 제3대 회장에 윤병일 방송위원회 수석연구위원 선임, 부회장 : 정중헌(조선일보 문화부 차장), 김광옥(수원대 교수), 감사 이경순(방송평론가)</li>
+          <li><span class="t-date">4.26</span><span class="t-text">월례토론회 “새 시대, 새 가치, 새 방송”</span></li>
+          <li><span class="t-date">10.8</span><span class="t-text">광주 · 전남 방송비평회 개최 및 우수 지역프로그램 시상</span></li>
+          <li><span class="t-date">10.15</span><span class="t-text">월례비평회. 1주제 “방송교육과 연수의 개발”, 2주제 “방송 조사연구와 편성”, 3주제 “방송심의의 개발”, 4주제 “방송비평의 개발”</span></li>
+          <li><span class="t-date">12.3</span><span class="t-text">연례 대토론회 및 이사회 개최. 제3대 회장에 윤병일 방송위원회 수석연구위원 선임, 부회장 : 정중헌(조선일보 문화부 차장), 김광옥(수원대 교수), 감사 이경순(방송평론가)</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1992">
         <h3 class="history-year-title">1992</h3>
         <ul class="timeline">
-          <li><span class="t-date">1.31</span> 월례발표회 “새해 방송 프로그램”</li>
-          <li><span class="t-date">2.7</span> 월례발표회 “방송과 성차별”</li>
-          <li><span class="t-date">3.27</span> 월례발표회 “선거방송의 평가”</li>
-          <li><span class="t-date">4.24</span> 월례토론회 “토크쇼”</li>
-          <li><span class="t-date">8.28</span> 광주 · 전남 방송비평회 창립 3주년 기념 포럼 및 우수 지역프로그램 시상식</li>
-          <li><span class="t-date">10.28</span> 연례 대토론회 “대통령 선거방송의 원칙과 형식”</li>
+          <li><span class="t-date">1.31</span><span class="t-text">월례발표회 “새해 방송 프로그램”</span></li>
+          <li><span class="t-date">2.7</span><span class="t-text">월례발표회 “방송과 성차별”</span></li>
+          <li><span class="t-date">3.27</span><span class="t-text">월례발표회 “선거방송의 평가”</span></li>
+          <li><span class="t-date">4.24</span><span class="t-text">월례토론회 “토크쇼”</span></li>
+          <li><span class="t-date">8.28</span><span class="t-text">광주 · 전남 방송비평회 창립 3주년 기념 포럼 및 우수 지역프로그램 시상식</span></li>
+          <li><span class="t-date">10.28</span><span class="t-text">연례 대토론회 “대통령 선거방송의 원칙과 형식”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1991">
         <h3 class="history-year-title">1991</h3>
         <ul class="timeline">
-          <li><span class="t-date">4.3~4</span> 연례 대토론회 “방송 관계 기구의 총체 점검과 위상 정립”</li>
-          <li><span class="t-date">10.10</span> 임시총회. 정관 개정 및 임원 개선으로 제2대 회장에 서정우 연세대 교수 선임, 부회장 : 변동현(전남대 교수), 임학송(서울예전 교수), 감사 : 최창섭(서강대 교수). 한국방송비평회 토론모음집 《방송비평》 제2호 간행</li>
-          <li><span class="t-date">12.6</span> 월례비평회 “1991년도의 지역방송을 돌아본다”</li>
-          <li><span class="t-date">12.26</span> 비평토론회 “민방시대 방송 편성의 문제”</li>
+          <li><span class="t-date">4.3~4</span><span class="t-text">연례 대토론회 “방송 관계 기구의 총체 점검과 위상 정립”</span></li>
+          <li><span class="t-date">10.10</span><span class="t-text">임시총회. 정관 개정 및 임원 개선으로 제2대 회장에 서정우 연세대 교수 선임, 부회장 : 변동현(전남대 교수), 임학송(서울예전 교수), 감사 : 최창섭(서강대 교수). 한국방송비평회 토론모음집 《방송비평》 제2호 간행</span></li>
+          <li><span class="t-date">12.6</span><span class="t-text">월례비평회 “1991년도의 지역방송을 돌아본다”</span></li>
+          <li><span class="t-date">12.26</span><span class="t-text">비평토론회 “민방시대 방송 편성의 문제”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1990">
         <h3 class="history-year-title">1990</h3>
         <ul class="timeline">
-          <li><span class="t-date">4.1</span> 한국방송비평회 토론모음집 《방송비평》 제1호 창간</li>
-          <li><span class="t-date">4.10</span> 월례토론회 “다채널시대의 라디오방송의 제 문제”</li>
-          <li><span class="t-date">6.17</span> 지역 대토론회 “지방자치시대의 지역방송의 역할과 과제”</li>
-          <li><span class="t-date">9.21</span> 지역 대토론회 “1990년대 지역방송의 변화와 전망”</li>
-          <li><span class="t-date">12.13~14</span> 연례 대토론회 “변화하는 방송환경과 새로운 대응 방향”</li>
+          <li><span class="t-date">4.1</span><span class="t-text">한국방송비평회 토론모음집 《방송비평》 제1호 창간</span></li>
+          <li><span class="t-date">4.10</span><span class="t-text">월례토론회 “다채널시대의 라디오방송의 제 문제”</span></li>
+          <li><span class="t-date">6.17</span><span class="t-text">지역 대토론회 “지방자치시대의 지역방송의 역할과 과제”</span></li>
+          <li><span class="t-date">9.21</span><span class="t-text">지역 대토론회 “1990년대 지역방송의 변화와 전망”</span></li>
+          <li><span class="t-date">12.13~14</span><span class="t-text">연례 대토론회 “변화하는 방송환경과 새로운 대응 방향”</span></li>
         </ul>
       </div>
 
       <span id="y1980s" class="history-anchor"></span><div class="history-year" id="y1989">
         <h3 class="history-year-title">1989</h3>
         <ul class="timeline">
-          <li><span class="t-date">1.31</span> 임시총회에서 정관 통과 및 새 집행부 구성. 회장에 최창섭 교수 연임, 부회장에 윤병일(방송개발원 이사), 강현두(서울대 교수), 정의용(동아그룹 이사), 감사에 이경순(방송평론가)</li>
-          <li><span class="t-date">3.18</span> 월례토론회 “5공화국 특집 다큐멘터리”</li>
-          <li><span class="t-date">7.12</span> 창립 1주년 기념 대토론회 방송비평문화 정착을 위한 심포지엄 “방송의 어제 · 오늘 · 내일을 재조명해 본다”</li>
-          <li><span class="t-date">10.7</span> 제1회 광주 · 전남 방송비평회 세미나. 1주제 “지역사회 발전과 방송”, 2주제 “가정생활에 있어서의 방송의 역할과 영향”</li>
-          <li><span class="t-date">11.27</span> 연말 월례회 및 기자 간친회. 주제 “비평적 시각으로 본 80년대 한국 방송의 위상”</li>
+          <li><span class="t-date">1.31</span><span class="t-text">임시총회에서 정관 통과 및 새 집행부 구성. 회장에 최창섭 교수 연임, 부회장에 윤병일(방송개발원 이사), 강현두(서울대 교수), 정의용(동아그룹 이사), 감사에 이경순(방송평론가)</span></li>
+          <li><span class="t-date">3.18</span><span class="t-text">월례토론회 “5공화국 특집 다큐멘터리”</span></li>
+          <li><span class="t-date">7.12</span><span class="t-text">창립 1주년 기념 대토론회 방송비평문화 정착을 위한 심포지엄 “방송의 어제 · 오늘 · 내일을 재조명해 본다”</span></li>
+          <li><span class="t-date">10.7</span><span class="t-text">제1회 광주 · 전남 방송비평회 세미나. 1주제 “지역사회 발전과 방송”, 2주제 “가정생활에 있어서의 방송의 역할과 영향”</span></li>
+          <li><span class="t-date">11.27</span><span class="t-text">연말 월례회 및 기자 간친회. 주제 “비평적 시각으로 본 80년대 한국 방송의 위상”</span></li>
         </ul>
       </div>
 
       <div class="history-year" id="y1988">
         <h3 class="history-year-title">1988</h3>
         <ul class="timeline">
-          <li><span class="t-date">5.4</span> 학계 · 언론계 · 방송계(OB) 등에서 뜻을 같이하는 13인이 모여 방송계의 진정한 발전을 위한 비평문화 정착을 목표로 ‘한국방송비평동우회’ 발족</li>
-          <li><span class="t-date">7.1</span> ‘한국방송비평회’로 명칭 변경, 초대 회장에 최창섭 서강대 교수 선임</li>
-          <li><span class="t-date">7.11</span> 창립기념 대토론회 “방송의 어제 · 오늘 · 내일을 재조명해 본다”</li>
-          <li><span class="t-date">10.10</span> 월례토론회 “제24회 서울올림픽 방송(TV) 현황과 분석”, “국회 청문회의 방송보도 현황과 개선책”</li>
+          <li><span class="t-date">5.4</span><span class="t-text">학계 · 언론계 · 방송계(OB) 등에서 뜻을 같이하는 13인이 모여 방송계의 진정한 발전을 위한 비평문화 정착을 목표로 ‘한국방송비평동우회’ 발족</span></li>
+          <li><span class="t-date">7.1</span><span class="t-text">‘한국방송비평회’로 명칭 변경, 초대 회장에 최창섭 서강대 교수 선임</span></li>
+          <li><span class="t-date">7.11</span><span class="t-text">창립기념 대토론회 “방송의 어제 · 오늘 · 내일을 재조명해 본다”</span></li>
+          <li><span class="t-date">10.10</span><span class="t-text">월례토론회 “제24회 서울올림픽 방송(TV) 현황과 분석”, “국회 청문회의 방송보도 현황과 개선책”</span></li>
         </ul>
       </div>
     </div>
