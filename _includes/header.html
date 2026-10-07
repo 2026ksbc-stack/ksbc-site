@@ -6,13 +6,14 @@
     <nav class="main-nav">
       <a href="index.html"{% if page.name == "index.html" %} class="active"{% endif %}>홈</a>
       <div class="dropdown">
-        <a href="about.html" class="dropdown-toggle{% if page.name == "greeting.html" or page.name == "about.html" or page.name == "articles.html" or page.name == "organization.html" or page.name == "location.html" %} active{% endif %}">학회소개</a>
+        <a href="about.html" class="dropdown-toggle{% if page.name == "greeting.html" or page.name == "about.html" or page.name == "articles.html" or page.name == "organization.html" or page.name == "location.html" or page.name == "donation.html" %} active{% endif %}">학회소개</a>
         <div class="dropdown-menu">
           <a href="greeting.html"{% if page.name == "greeting.html" %} class="active"{% endif %}>학회장인사말</a>
           <a href="about.html"{% if page.name == "about.html" %} class="active"{% endif %}>학회소개</a>
           <a href="history.html"{% if page.name == "history.html" %} class="active"{% endif %}>학회연혁</a>
           <a href="articles.html"{% if page.name == "articles.html" %} class="active"{% endif %}>학회정관</a>
           <a href="organization.html"{% if page.name == "organization.html" %} class="active"{% endif %}>학회구성</a>
+          <a href="donation.html" style="white-space: nowrap;"{% if page.name == "donation.html" %} class="active"{% endif %}>기부금 모금액 및 활용실적</a>
           <!-- <a href="location.html"{% if page.name == "location.html" %} class="active"{% endif %}>오시는 길</a> -->
         </div>
       </div>
