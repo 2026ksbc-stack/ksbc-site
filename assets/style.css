@@ -138,6 +138,8 @@ img { max-width: 100%; }
   color: var(--navy);
   font-weight: 700;
 }
+.dropdown-menu { width: max-content; }
+
 /* Sub-tabs bar (�숉쉶�뚭컻 �섏쐞 �섏씠吏� �곷떒) */
 .subtabs {
   background: var(--bg-soft);
