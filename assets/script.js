@@ -70,7 +70,7 @@ function renderAccordionList(containerEl, items, opts = {}) {
     body.style.marginTop = "0";
     body.style.borderTop = "none";
     body.style.borderRadius = "0 0 8px 8px";
-    let bodyHtml = '<div class="detail-body">' + escapeHtml(item.body || "") + "</div>";
+    let bodyHtml = '<div class="detail-body">' + (item.body || "") + "</div>";
     if (item.file) {
       bodyHtml += '<p style="margin-top:14px;"><a class="btn outline" href="' + item.file + '" download>첨부파일 다운로드</a></p>';
     }
