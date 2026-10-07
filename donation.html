@@ -33,10 +33,10 @@
 <script src="assets/script.js"></script>
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
-  loadJSON("data/notices.json")
+  loadJSON("data/donation.json")
     .then((items) => renderAccordionList(document.getElementById("notice-list"), items))
     .catch((err) => {
-      document.getElementById("notice-list").innerHTML = '<li class="empty-state">공지사항을 불러오지 못했습니다.</li>';
+      document.getElementById("notice-list").innerHTML = '<li class="empty-state">기부금 항목을 불러오지 못했습니다.</li>';
       console.error(err);
     });
 </script>
